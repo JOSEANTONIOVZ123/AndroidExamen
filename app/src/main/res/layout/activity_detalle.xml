@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewDetalle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/textViewNombreDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewTelefonoDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capital"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewEmailDetalle"
+        android:layout_width="373dp"
+        android:layout_height="64dp"
+        android:text="Población:"
+        android:textSize="30dp" />
+</LinearLayout>

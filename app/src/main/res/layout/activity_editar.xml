@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewEditar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"/>
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Editar nombre del país"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Editar Capital"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar cambios"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

@@ -18,8 +18,8 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:title="Lista de Contactos"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="Lista de Países"
             tools:ignore="MissingConstraints" />
 
         <androidx.recyclerview.widget.RecyclerView

@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun confirmarEliminarLista() {
         AlertDialog.Builder(this)
-            .setTitle("Eliminar todos los contactos")
+            .setTitle("Eliminar todos los paises")
             .setMessage("¿Seguro que quieres borrar la lista completa?")
             .setPositiveButton("Sí") { _, _ -> limpiarLista() }
             .setNegativeButton("No", null)

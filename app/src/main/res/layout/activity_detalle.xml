@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -29,9 +30,17 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textViewEmailDetalle"
-        android:layout_width="373dp"
-        android:layout_height="64dp"
-        android:text="Población:"
-        android:textSize="30dp" />
+        android:id="@+id/textViewPoblacionDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Población: "
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/imageViewEU"
+        android:layout_width="194dp"
+        android:layout_height="131dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/c_europa" />
+
 </LinearLayout>

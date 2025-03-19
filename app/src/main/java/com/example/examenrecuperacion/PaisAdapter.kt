@@ -19,6 +19,7 @@ class PaisAdapter(private val contactos: MutableList<Pais>, private val context:
         val nombre: TextView = itemView.findViewById(R.id.textViewNombre)
         val telefono: TextView = itemView.findViewById(R.id.textViewTelefono)
         val imagen: ImageView = itemView.findViewById(R.id.imageViewContacto)
+        val imagenUE: ImageView = itemView.findViewById(R.id.imageUE)
 
         init {
             itemView.setOnClickListener {
@@ -45,6 +46,7 @@ class PaisAdapter(private val contactos: MutableList<Pais>, private val context:
         holder.nombre.text = contacto.nombre
         holder.telefono.text = contacto.capital
         holder.imagen.setImageResource(contacto.bandera)
+        holder.imagenUE.setImageResource(contacto.europa)
     }
 
     override fun getItemCount(): Int = contactos.size
@@ -73,8 +75,8 @@ class PaisAdapter(private val contactos: MutableList<Pais>, private val context:
 
     private fun confirmarEliminarContacto(position: Int) {
         AlertDialog.Builder(context)
-            .setTitle("Eliminar contacto")
-            .setMessage("¿Estás seguro de que deseas eliminar este contacto?")
+            .setTitle("Eliminar País")
+            .setMessage("¿Estás seguro de que deseas eliminar este País?")
             .setPositiveButton("Sí") { _, _ ->
                 contactos.removeAt(position)
                 notifyItemRemoved(position)
